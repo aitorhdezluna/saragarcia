@@ -4,6 +4,7 @@ import { ScrollTrigger } from "https://cdn.skypack.dev/gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
+  // Animaciones de revelado suave
   const reveals = document.querySelectorAll(".reveal-up");
   reveals.forEach((el) => {
     gsap.to(el, {
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Navegación Overlay
   const menuBtn = document.getElementById("menu-toggle");
   const navOverlay = document.getElementById("nav-overlay");
   
