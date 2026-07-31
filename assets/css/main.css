@@ -4,7 +4,7 @@
   :root {
     --bg-paper: #FAFAFA;
     --text-carbon: #121212;
-    --text-muted: #555555;
+    --text-muted: #666666;
     --border-grid: #E5E5E5;
   }
 
@@ -42,6 +42,6 @@
 
 .reveal-up {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(24px);
   will-change: opacity, transform;
 }
