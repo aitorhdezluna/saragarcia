@@ -1,180 +1,110 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sara García Studio — Dirección Visual & Fotografía Editorial</title>
-  <meta name="description" content="Estudio de fotografía y dirección de arte en Tenerife. Especializados en fotografía de moda, producto escultural y eventos corporativos para marcas de alto nivel.">
-  <link rel="canonical" href="https://saragarciastudio.com/">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="Sara García Studio — Dirección Visual & Fotografía">
-  <meta property="og:description" content="Transformamos ideas en imágenes memorables. Fotografía de Moda, Producto y Eventos.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://saragarciastudio.com/">
-
-  <!-- Fuentes & Hojas de Estilo Relativas -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  
-  <!-- Carga del CSS con ruta relativa -->
-  <link rel="stylesheet" href="./assets/css/main.css">
-
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "PhotographyStudio",
-    "name": "Sara García Studio",
-    "url": "https://saragarciastudio.com",
-    "telephone": "+34604859893",
-    "email": "info@saragarciastudio.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Santa Cruz de Tenerife",
-      "addressCountry": "ES"
-    },
-    "description": "Estudio especializado en fotografía de moda, producto y eventos corporativos.",
-    "knowsAbout": ["Fotografía de Moda", "Fotografía de Producto", "Fotografía de Eventos", "Dirección Visual"]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara García Studio | Fotografía & Maquillaje</title>
+    <meta name="description" content="Especialistas en fotografía de moda, producto, eventos y maquillaje profesional en Sara García Studio.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#FAFAFA] text-[#121212] selection:bg-[#121212] selection:text-[#FAFAFA]">
+<body>
 
-  <a href="#contenido-principal" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-black focus:text-white">
-    Saltar al contenido principal
-  </a>
+    <!-- Menú de Navegación principal -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Sara García Studio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                <li class="dropdown">
+                    <a href="#">Fotografía</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fotografia-moda.html">Fotografía de Moda</a></li>
+                        <li><a href="fotografia-eventos.html">Fotografía de Eventos</a></li>
+                        <li><a href="fotografia-producto.html">Fotografía de Producto</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header Fijo Superior -->
-  <header class="fixed top-0 left-0 w-full z-40 px-6 md:px-12 py-8 flex justify-between items-baseline mix-blend-difference text-white">
-    <a href="./" class="text-sm tracking-[0.2em] uppercase font-light" aria-label="Sara García Studio - Inicio">
-      Sara García Studio
-    </a>
-    <button id="menu-toggle" class="text-xs uppercase tracking-[0.3em] font-light cursor-pointer focus:outline-none" aria-label="Abrir menú de navegación" aria-expanded="false">
-      Menú
-    </button>
-  </header>
+    <main>
+        <!-- Sección Banner / Bienvenida -->
+        <section class="hero">
+            <div class="container">
+                <h1>Hola, soy Sara García y te doy la bienvenida.</h1>
+                <p>Sara García Studio es un espacio multidisciplinar donde podrás disfrutar tanto de la fotografía como del maquillaje. Nos apasiona acompañar a las personas en momentos de crecimiento personal y profesional; es por eso que hemos ideado un lugar para hacer de esos instantes un recuerdo inolvidable.</p>
+                <p>Somos especialistas en fotografía de moda, producto y maquillaje en todas sus vertientes. Pero sea cual sea tu inquietud, te podemos ayudar a inmortalizar los buenos momentos en familia, tus eventos y proyectos.</p>
+                <p>Si quieres conocer más de nuestros servicios, esperamos poder hablar contigo muy pronto; clica en el botón de contacto y cuéntanos qué te traes entre manos.</p>
+                
+                <a href="contacto.html" class="btn">Contacto</a>
 
-  <!-- Menú Editorial Desplegable -->
-  <div id="nav-overlay" class="fixed inset-0 bg-[#121212] text-[#FAFAFA] z-30 opacity-0 pointer-events-none transition-opacity duration-700 ease-in-out flex flex-col justify-between p-8 md:p-24">
-    <div class="flex justify-between items-start">
-      <span class="text-xs uppercase tracking-[0.3em] text-[#666666]">Navegación</span>
-    </div>
-    <nav class="my-auto">
-      <ul class="space-y-6 md:space-y-8 font-editorial italic text-4xl md:text-7xl">
-        <li><a href="./" class="hover:text-[#666666] transition-colors duration-300">Inicio</a></li>
-        <li><a href="./servicios/moda/" class="hover:text-[#666666] transition-colors duration-300">Fotografía de Moda</a></li>
-        <li><a href="./servicios/producto/" class="hover:text-[#666666] transition-colors duration-300">Fotografía de Producto</a></li>
-        <li><a href="./servicios/eventos/" class="hover:text-[#666666] transition-colors duration-300">Fotografía de Eventos</a></li>
-        <li><a href="./sobre-sara/" class="hover:text-[#666666] transition-colors duration-300">Sobre Sara</a></li>
-        <li><a href="./contacto/" class="hover:text-[#666666] transition-colors duration-300">Contacto</a></li>
-      </ul>
-    </nav>
-    <div class="flex flex-col md:flex-row justify-between text-xs tracking-[0.2em] uppercase text-[#666666] gap-4">
-      <span>Santa Cruz de Tenerife — Asignaciones Nacionales e Internacionales</span>
-      <span>© 2026</span>
-    </div>
-  </div>
+                <!-- Marcador [foto] -->
+                <div class="hero-image">
+                    <img src="img/sara-garcia-retrato.jpg" alt="Sara García, CEO y Fotógrafa de Sara García Studio">
+                </div>
+            </div>
+        </section>
 
-  <main id="contenido-principal">
-    <!-- Hero Principal -->
-    <section class="min-h-screen pt-40 pb-20 px-6 md:px-12 flex flex-col justify-between">
-      <div class="max-w-6xl">
-        <p class="text-xs uppercase tracking-[0.3em] text-[#666666] mb-8 reveal-up">Estudio de Dirección Visual</p>
-        <h1 class="text-5xl md:text-8xl lg:text-9xl font-light tracking-tight leading-[0.95] mb-12 reveal-up">
-          Transformamos ideas en <span class="font-editorial italic font-normal">imágenes</span> memorables.
-        </h1>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end border-t border-[#E5E5E5] pt-8 reveal-up">
-        <p class="md:col-span-6 text-sm md:text-base leading-relaxed text-[#666666]">
-          Acompañamos a marcas de moda, diseñadores y corporaciones a consolidar su lenguaje visual. Capturamos la esencia del producto con rigor técnico y elegancia atemporal.
-        </p>
-        <div class="md:col-span-6 flex justify-end text-xs uppercase tracking-[0.2em]">
-          <span>Explorar Áreas — 01 / 03</span>
+        <!-- Sección Nuestros Servicios -->
+        <section class="servicios">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <p class="intro-servicios">En Sara García Studio ofrecemos servicios de fotografía de moda, producto, eventos y social, capturando cada momento con profesionalismo y estilo. También brindamos maquillaje social y cinematográfico para realzar tu belleza en cualquier ocasión. Además, impartimos formación en fotografía y maquillaje para que desarrolles tus habilidades y talento. ¡Transformamos ideas en imágenes memorables!</p>
+
+                <div class="servicios-grid">
+                    <article class="servicio-card">
+                        <h3>Fotografía de moda</h3>
+                        <p>Ideal para destacar y potenciar tu presencia en el mundo de la moda.</p>
+                        <a href="fotografia-moda.html" class="btn-link">Saber más</a>
+                    </article>
+
+                    <article class="servicio-card">
+                        <h3>Fotografía de producto</h3>
+                        <p>La mejor arma para destacar tu producto.</p>
+                        <a href="fotografia-producto.html" class="btn-link">Saber más</a>
+                    </article>
+
+                    <article class="servicio-card">
+                        <h3>Fotografía de eventos</h3>
+                        <p>Fotografías y vídeo para inmortalizar tu evento con todo lujo de detalles.</p>
+                        <a href="fotografia-eventos.html" class="btn-link">Saber más</a>
+                    </article>
+
+                    <article class="servicio-card">
+                        <h3>Fotografía Social</h3>
+                        <p>Captura los momentos más especiales e inolvidables de tu vida.</p>
+                    </article>
+
+                    <article class="servicio-card">
+                        <h3>Maquillaje</h3>
+                        <p>Maquillaje para una ocasión especial o para tus trabajos cinematográficos.</p>
+                    </article>
+
+                    <article class="servicio-card">
+                        <h3>Formación</h3>
+                        <p>Aprende todo lo necesario sobre la fotografía y el maquillaje.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Call To Action (CTA) -->
+        <section class="cta">
+            <div class="container">
+                <h2>Si tienes alguna duda o necesitas un presupuesto, escríbenos sin problema</h2>
+                <a href="contacto.html" class="btn btn-primary">Contacto</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sara García Studio. Todos los derechos reservados.</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- Exposición de Servicios Integrados -->
-    <section class="py-32 px-6 md:px-12 border-t border-[#E5E5E5]">
-      <div class="max-w-2xl mb-20 reveal-up">
-        <span class="text-xs uppercase tracking-[0.3em] text-[#666666]">Especialidades</span>
-        <h2 class="text-4xl md:text-6xl font-light mt-4">Nuestros Servicios</h2>
-      </div>
-
-      <div class="space-y-0 divide-y divide-[#E5E5E5] border-b border-[#E5E5E5]">
-        <!-- Moda -->
-        <article class="py-12 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline hover:bg-[#F0F0F0] transition-colors duration-300 px-4 reveal-up">
-          <span class="md:col-span-2 font-mono text-xs text-[#666666]">01</span>
-          <h3 class="md:col-span-4 text-2xl md:text-4xl font-editorial italic">Fotografía de Moda</h3>
-          <p class="md:col-span-4 text-sm text-[#666666]">Ideal para destacar y potenciar tu presencia en la industria textil y editorial.</p>
-          <div class="md:col-span-2 text-right">
-            <a href="./servicios/moda/" class="text-xs uppercase tracking-[0.2em] border-b border-[#121212] pb-1">Ver Proyectos</a>
-          </div>
-        </article>
-
-        <!-- Producto -->
-        <article class="py-12 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline hover:bg-[#F0F0F0] transition-colors duration-300 px-4 reveal-up">
-          <span class="md:col-span-2 font-mono text-xs text-[#666666]">02</span>
-          <h3 class="md:col-span-4 text-2xl md:text-4xl font-editorial italic">Fotografía de Producto</h3>
-          <p class="md:col-span-4 text-sm text-[#666666]">Bodegón de alta gama, cosmética y objetos tratados con rigor escultórico.</p>
-          <div class="md:col-span-2 text-right">
-            <a href="./servicios/producto/" class="text-xs uppercase tracking-[0.2em] border-b border-[#121212] pb-1">Ver Proyectos</a>
-          </div>
-        </article>
-
-        <!-- Eventos -->
-        <article class="py-12 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline hover:bg-[#F0F0F0] transition-colors duration-300 px-4 reveal-up">
-          <span class="md:col-span-2 font-mono text-xs text-[#666666]">03</span>
-          <h3 class="md:col-span-4 text-2xl md:text-4xl font-editorial italic">Fotografía de Eventos</h3>
-          <p class="md:col-span-4 text-sm text-[#666666]">Documentación sutil y fidedigna de encuentros de marca e hitos corporativos.</p>
-          <div class="md:col-span-2 text-right">
-            <a href="./servicios/eventos/" class="text-xs uppercase tracking-[0.2em] border-b border-[#121212] pb-1">Ver Proyectos</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Bloque Manifiesto Editorial -->
-    <section class="py-40 px-6 md:px-12 bg-[#121212] text-[#FAFAFA]">
-      <div class="max-w-5xl mx-auto text-center space-y-12 reveal-up">
-        <span class="text-xs uppercase tracking-[0.3em] text-[#666666]">Filosofía de Trabajo</span>
-        <blockquote class="text-3xl md:text-6xl font-light leading-tight">
-          «Buscamos acompañar a las marcas en sus momentos de consolidación, creando un archivo fotográfico que transmita <span class="font-editorial italic">valor real</span> e identidad.»
-        </blockquote>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-[#121212] text-[#FAFAFA] pt-24 pb-12 px-6 md:px-12">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-24 border-b border-[#333333]">
-      <div class="md:col-span-6 space-y-6">
-        <p class="text-xs uppercase tracking-[0.3em] text-[#666666]">Contacto Directo</p>
-        <a href="mailto:info@saragarciastudio.com" class="text-3xl md:text-5xl font-editorial italic block hover:text-[#666666] transition-colors">
-          info@saragarciastudio.com
-        </a>
-        <p class="text-sm font-light text-[#AAA]">+34 604 859 893</p>
-      </div>
-      <div class="md:col-span-3 space-y-4 text-sm text-[#666666]">
-        <p class="uppercase tracking-[0.2em] text-xs text-[#FAFAFA]">Ubicación</p>
-        <p>Santa Cruz de Tenerife<br>Islas Canarias, España</p>
-      </div>
-      <div class="md:col-span-3 space-y-4 text-sm text-[#666666]">
-        <p class="uppercase tracking-[0.2em] text-xs text-[#FAFAFA]">Redes Sociales</p>
-        <ul class="space-y-2">
-          <li><a href="https://www.instagram.com/saragarcia.studio/" class="hover:text-[#FAFAFA] transition-colors" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@saragarcia.studio" class="hover:text-[#FAFAFA] transition-colors" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="pt-8 flex flex-col md:flex-row justify-between text-xs tracking-[0.2em] uppercase text-[#666666] gap-4">
-      <span>© 2026 Sara García Studio. Todos los derechos reservados.</span>
-      <span>Diseño & Desarrollo Web</span>
-    </div>
-  </footer>
-
-  <!-- Carga del JS con ruta relativa -->
-  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
