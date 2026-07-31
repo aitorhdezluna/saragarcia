@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-paper: #FAFAFA;
+    --text-carbon: #121212;
+    --text-muted: #555555;
+    --border-grid: #E5E5E5;
+  }
+
+  @font-face {
+    font-family: 'Editorial New';
+    src: url('https://cdn.jsdelivr.net/fontsource/fonts/serif@latest/latin-400-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  html {
+    background-color: var(--bg-paper);
+    color: var(--text-carbon);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--text-carbon);
+    color: var(--bg-paper);
+  }
+}
+
+.font-editorial {
+  font-family: 'Editorial New', Georgia, serif;
+}
+
+:focus-visible {
+  outline: 1px solid var(--text-carbon);
+  outline-offset: 4px;
+}
+
+.reveal-up {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
