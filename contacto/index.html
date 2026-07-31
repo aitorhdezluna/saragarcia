@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Sara García Studio</title>
+  <meta name="description" content="Inicia una conversación sobre tu próximo proyecto de fotografía o campaña visual.">
+  <link rel="canonical" href="https://saragarciastudio.com/contacto/">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body class="bg-[#FAFAFA] text-[#121212]">
+
+  <header class="fixed top-0 left-0 w-full z-40 px-6 md:px-12 py-8 flex justify-between items-baseline mix-blend-difference text-white">
+    <a href="/" class="text-sm tracking-[0.2em] uppercase font-light">Sara García Studio</a>
+    <a href="/" class="text-xs uppercase tracking-[0.3em] font-light">Volver</a>
+  </header>
+
+  <main class="min-h-screen pt-40 pb-24 px-6 md:px-12 flex flex-col justify-between">
+    <div class="max-w-5xl">
+      <span class="text-xs uppercase tracking-[0.3em] text-[#666666] block mb-6">Proyectos & Encargos</span>
+      <h1 class="text-5xl md:text-8xl font-light leading-none mb-12">Inicie un Diálogo</h1>
+      
+      <form action="#" method="POST" class="space-y-12 max-w-3xl pt-8">
+        <div class="space-y-2 border-b border-[#E5E5E5] pb-4">
+          <label for="nombre" class="text-xs uppercase tracking-[0.2em] text-[#666666] block">Nombre o Firma</label>
+          <input type="text" id="nombre" name="nombre" required class="w-full bg-transparent py-2 text-xl font-editorial focus:outline-none placeholder-[#AAA]" placeholder="Ej. Firma / Nombre">
+        </div>
+
+        <div class="space-y-2 border-b border-[#E5E5E5] pb-4">
+          <label for="email" class="text-xs uppercase tracking-[0.2em] text-[#666666] block">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required class="w-full bg-transparent py-2 text-xl font-editorial focus:outline-none placeholder-[#AAA]" placeholder="contacto@marca.com">
+        </div>
+
+        <div class="space-y-2 border-b border-[#E5E5E5] pb-4">
+          <label for="servicio" class="text-xs uppercase tracking-[0.2em] text-[#666666] block">Servicio Requerido</label>
+          <select id="servicio" name="servicio" class="w-full bg-transparent py-2 text-lg font-light focus:outline-none cursor-pointer">
+            <option value="moda">Fotografía de Moda</option>
+            <option value="producto">Fotografía de Producto</option>
+            <option value="eventos">Fotografía de Eventos</option>
+          </select>
+        </div>
+
+        <div class="space-y-2 border-b border-[#E5E5E5] pb-4">
+          <label for="mensaje" class="text-xs uppercase tracking-[0.2em] text-[#666666] block">Detalles</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required class="w-full bg-transparent py-2 text-lg font-light focus:outline-none placeholder-[#AAA]" placeholder="Cuéntanos brevemente la idea, plazos y requerimientos..."></textarea>
+        </div>
+
+        <button type="submit" class="text-xs uppercase tracking-[0.3em] bg-[#121212] text-[#FAFAFA] px-12 py-5 hover:bg-[#666666] transition-colors cursor-pointer">
+          Enviar Propuesta
+        </button>
+      </form>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-24 border-t border-[#E5E5E5] text-xs uppercase tracking-[0.2em] text-[#666666]">
+      <div>
+        <span class="block text-[#121212] mb-1">Correo Directo</span>
+        <a href="mailto:info@saragarciastudio.com" class="hover:underline">info@saragarciastudio.com</a>
+      </div>
+      <div>
+        <span class="block text-[#121212] mb-1">Atención</span>
+        <a href="tel:+34604859893" class="hover:underline">+34 604 859 893</a>
+      </div>
+      <div>
+        <span class="block text-[#121212] mb-1">Ubicación</span>
+        <span>Santa Cruz de Tenerife, España</span>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
