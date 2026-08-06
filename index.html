@@ -21,6 +21,7 @@
   <meta name="twitter:image" content="https://saragarciastudio.com/img/editorial-1.jpg">
   <link rel="preload" as="image" href="img/editorial-1.jpg" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
   <script defer src="assets/js/main.js"></script>
 </head>
 <body>
@@ -91,13 +92,26 @@
         <p class="fashion-stage__copy">Definimos concepto, localización, estilismo, maquillaje, peluquería, atrezzo y lenguaje visual. Cada decisión existe para que la colección se entienda sin necesidad de explicarla.</p>
       </div>
       <div class="service-strip" role="list" aria-label="Servicios de moda">
-        <button class="service-strip__item is-active" type="button" data-service="editorial" role="listitem"><span>01</span>Editorial</button>
-        <button class="service-strip__item" type="button" data-service="lookbook" role="listitem"><span>02</span>Lookbook</button>
-        <button class="service-strip__item" type="button" data-service="test" role="listitem"><span>03</span>Test modelo</button>
-        <button class="service-strip__item" type="button" data-service="film" role="listitem"><span>04</span>Fashion film</button>
-      </div>
-      <div class="service-detail" aria-live="polite">
-        <p data-service-text>Una narrativa fotográfica para presentar el concepto de una colección: imágenes principales, detalles, primeros planos y recursos complementarios.</p>
+        <article class="service-strip__item" role="listitem">
+          <span class="service-strip__number">01</span>
+          <h3>Editorial</h3>
+          <p>Una narrativa fotográfica para presentar el concepto de una colección: imágenes principales, detalles, primeros planos y recursos complementarios.</p>
+        </article>
+        <article class="service-strip__item" role="listitem">
+          <span class="service-strip__number">02</span>
+          <h3>Lookbook</h3>
+          <p>Una serie clara y coherente para mostrar prendas, referencias y combinaciones. Puede funcionar como presentación, catálogo comercial o herramienta de venta.</p>
+        </article>
+        <article class="service-strip__item" role="listitem">
+          <span class="service-strip__number">03</span>
+          <h3>Test modelo</h3>
+          <p>Un book actualizado y fiel a tu imagen: estilismo neutro, cabello natural y una dirección sencilla pensada para castings y agencias.</p>
+        </article>
+        <article class="service-strip__item" role="listitem">
+          <span class="service-strip__number">04</span>
+          <h3>Fashion film</h3>
+          <p>Una pieza audiovisual breve donde imagen, música y movimiento construyen el universo de la firma. También desarrollamos spots con un objetivo comercial más directo.</p>
+        </article>
       </div>
     </section>
 

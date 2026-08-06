@@ -33,19 +33,6 @@ const observer = new IntersectionObserver(entries => {
 }, {threshold:.14});
 document.querySelectorAll('.reveal-media').forEach(el => observer.observe(el));
 
-const services = {
-  editorial: 'Una narrativa fotográfica para presentar el concepto de una colección: imágenes principales, detalles, primeros planos y recursos complementarios.',
-  lookbook: 'Una serie clara y coherente para mostrar prendas, referencias y combinaciones. Puede funcionar como presentación de colección, catálogo comercial o herramienta de venta.',
-  test: 'Un book actualizado y fiel a tu imagen actual: estilismo neutro, cabello natural y una dirección sencilla pensada para castings y agencias.',
-  film: 'Una pieza audiovisual breve donde imagen, música y movimiento construyen el universo de la firma. También desarrollamos spots con un objetivo comercial más directo.'
-};
-const serviceText = document.querySelector('[data-service-text]');
-document.querySelectorAll('[data-service]').forEach(button => button.addEventListener('click', () => {
-  document.querySelectorAll('[data-service]').forEach(item => item.classList.remove('is-active'));
-  button.classList.add('is-active');
-  if (serviceText) serviceText.textContent = services[button.dataset.service];
-}));
-
 if (!reduceMotion) {
   const heroMedia = document.querySelector('[data-parallax]');
   let ticking = false;
