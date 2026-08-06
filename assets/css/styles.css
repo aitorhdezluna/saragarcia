@@ -523,3 +523,26 @@ body.dialog-open{overflow:hidden}
     padding-top:.25rem;
   }
 }
+
+/* Desktop product triptych balance */
+@media (min-width: 800px){
+  .product-gallery{
+    grid-template-columns:minmax(0,1fr) minmax(0,1.06fr) minmax(0,1fr);
+    column-gap:clamp(1.5rem,2.6vw,3.25rem);
+    max-width:88rem;
+  }
+  .product-gallery__a,
+  .product-gallery__b,
+  .product-gallery__c{
+    width:100%;
+    aspect-ratio:3/4;
+    margin-top:0;
+  }
+  .product-gallery__a,
+  .product-gallery__c{
+    transform:translateY(clamp(1.25rem,2vw,2.5rem));
+  }
+  .product-gallery__note{
+    margin-top:clamp(1.25rem,2vw,2rem);
+  }
+}
