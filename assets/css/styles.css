@@ -196,3 +196,243 @@
   .events-reel figure{flex-basis:min(28vw,24rem);height:auto}
   .events-reel img{max-height:34rem}
 }
+
+/* Footer and legal notice */
+.site-footer{
+  display:grid;
+  gap:1.5rem;
+  margin-top:clamp(3rem,7vw,6rem);
+  padding:1rem 0 0;
+  border-top:1px solid rgba(255,255,255,.55);
+  font-size:.65rem;
+  line-height:1.45;
+  text-transform:uppercase;
+}
+.site-footer__brand,
+.site-footer__legal{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:.65rem 2rem;
+}
+.site-footer__legal{align-items:baseline}
+.site-footer__credit{margin:0;padding-bottom:.25rem}
+.site-footer a,
+.footer-link{
+  color:inherit;
+  text-decoration:none;
+  border:0;
+  border-bottom:1px solid currentColor;
+  padding:0 0 .12rem;
+  background:transparent;
+  font:inherit;
+  text-transform:inherit;
+  cursor:pointer;
+}
+.site-footer a:hover,
+.footer-link:hover{border-bottom-style:dashed}
+.site-footer a:focus-visible,
+.footer-link:focus-visible,
+.legal-dialog a:focus-visible,
+.legal-dialog button:focus-visible{
+  outline:2px solid currentColor;
+  outline-offset:4px;
+}
+
+.legal-dialog{
+  width:100%;
+  max-width:none;
+  height:100%;
+  max-height:none;
+  margin:0;
+  padding:0;
+  border:0;
+  background:transparent;
+  color:var(--ink);
+}
+.legal-dialog::backdrop{
+  background:rgba(0,0,0,.76);
+  backdrop-filter:blur(6px);
+}
+.legal-dialog[open]{display:flex;justify-content:flex-end}
+.legal-dialog__panel{
+  width:min(100%,58rem);
+  min-height:100%;
+  background:var(--paper);
+  overflow:auto;
+  overscroll-behavior:contain;
+  animation:legal-in .5s cubic-bezier(.7,0,.1,1) both;
+}
+.legal-dialog__header{
+  position:sticky;
+  top:0;
+  z-index:2;
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:2rem;
+  padding:1rem var(--pad) 1.25rem;
+  border-bottom:1px solid var(--ink);
+  background:rgba(245,243,237,.96);
+  backdrop-filter:blur(10px);
+}
+.legal-dialog__index{
+  display:block;
+  margin-bottom:1.5rem;
+  font-size:.62rem;
+  text-transform:uppercase;
+}
+.legal-dialog__header h2{
+  margin:0;
+  font-size:clamp(3.2rem,9vw,7.5rem);
+  line-height:.75;
+  letter-spacing:-.075em;
+  font-weight:600;
+}
+.legal-dialog__close{
+  flex:0 0 auto;
+  width:3rem;
+  height:3rem;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--ink);
+  border-radius:50%;
+  background:transparent;
+  color:inherit;
+  font-size:2rem;
+  line-height:1;
+  cursor:pointer;
+}
+.legal-dialog__close:hover{background:var(--ink);color:var(--paper)}
+.legal-dialog__content{padding:clamp(2rem,6vw,5rem) var(--pad) 5rem}
+.legal-dialog__content section{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+  padding:0 0 clamp(2.5rem,6vw,5rem);
+  margin:0 0 clamp(2.5rem,6vw,5rem);
+  border-bottom:1px solid rgba(20,20,20,.28);
+}
+.legal-dialog__content h3{
+  margin:0;
+  font-size:clamp(1.6rem,4vw,3rem);
+  line-height:.95;
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+.legal-dialog__content p{max-width:48rem;margin:0;font-size:clamp(.98rem,1.5vw,1.15rem)}
+.legal-dialog__content a{color:inherit;text-underline-offset:.2em}
+.legal-data{margin:.5rem 0 0;border-top:1px solid var(--ink)}
+.legal-data div{
+  display:grid;
+  grid-template-columns:minmax(7rem,.42fr) 1fr;
+  gap:1rem;
+  padding:.8rem 0;
+  border-bottom:1px solid rgba(20,20,20,.24);
+}
+.legal-data dt{font-size:.62rem;text-transform:uppercase}
+.legal-data dd{margin:0}
+.legal-pending{
+  display:inline-block;
+  padding:.15rem .35rem;
+  background:#ffdd31;
+  color:#111;
+  font-weight:700;
+}
+.legal-dialog__updated{font-size:.65rem!important;text-transform:uppercase}
+body.dialog-open{overflow:hidden}
+@keyframes legal-in{from{transform:translateX(100%)}to{transform:translateX(0)}}
+
+@media(min-width:800px){
+  .site-footer{grid-template-columns:1fr 1.5fr;align-items:end}
+  .site-footer__legal{justify-content:flex-end;text-align:right}
+  .site-footer__credit{grid-column:1/-1}
+  .legal-dialog__content section{grid-template-columns:minmax(11rem,.34fr) 1fr}
+  .legal-dialog__content section h3{grid-column:1}
+  .legal-dialog__content section > :not(h3){grid-column:2}
+}
+@media(prefers-reduced-motion:reduce){.legal-dialog__panel{animation:none}}
+
+/* Desktop refinements requested — mobile composition remains unchanged */
+@media (min-width:800px){
+  .hero__title{
+    font-size:clamp(4.32rem,21.6vw,16rem);
+  }
+
+  .fashion-stage{
+    grid-template-columns:minmax(0,.82fr) minmax(12rem,.42fr);
+  }
+  .fashion-stage__main{
+    width:min(100%,46rem);
+    height:clamp(32rem,55vw,48rem);
+  }
+  .fashion-stage__secondary{
+    width:min(100%,26rem);
+    height:clamp(24rem,36vw,34rem);
+    justify-self:end;
+  }
+
+  .process__image{
+    width:min(58rem,58%);
+    height:clamp(28rem,43vw,40rem);
+  }
+  .process__content{
+    margin-top:clamp(-6rem,-7vw,-4rem);
+  }
+
+  .product-gallery{
+    grid-template-columns:minmax(0,.95fr) minmax(16rem,.55fr);
+    max-width:76rem;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .product-gallery__a{
+    height:clamp(30rem,49vw,45rem);
+  }
+  .product-gallery__b{
+    height:clamp(20rem,30vw,29rem);
+    margin-top:clamp(3rem,6vw,6rem);
+  }
+  .product-gallery__c{
+    width:min(62%,42rem);
+    height:clamp(25rem,36vw,35rem);
+    margin-top:clamp(2rem,4vw,4rem);
+  }
+
+  .site-footer{
+    grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,1fr);
+    gap:clamp(2rem,5vw,6rem);
+    align-items:start;
+    padding:1.35rem 0 .5rem;
+  }
+  .site-footer__column{
+    min-width:0;
+  }
+  .site-footer__brand,
+  .site-footer__legal{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:.7rem;
+  }
+  .site-footer__brand strong{
+    font-weight:600;
+  }
+  .site-footer__legal{
+    text-align:left;
+  }
+  .site-footer__credit{
+    grid-column:auto;
+    margin:0;
+    padding:0;
+    text-align:right;
+  }
+}
+
+/* Reliable dialog fallback in addition to the native <dialog> API */
+.legal-dialog.is-open{
+  display:flex;
+  justify-content:flex-end;
+}
+.legal-dialog:not([open]):not(.is-open){display:none}
