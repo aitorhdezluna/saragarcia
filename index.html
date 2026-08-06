@@ -1,112 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sara García Studio | Fotografía & Maquillaje</title>
-    <meta name="description" content="Especialistas en fotografía de moda, producto, eventos y maquillaje profesional en Sara García Studio.">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sara García Studio — Fotografía, moda y producción visual</title>
+  <meta name="description" content="Estudio de fotografía y producción visual especializado en moda, producto, eventos, maquillaje y formación. Dirección creativa e imágenes con intención.">
+  <meta name="theme-color" content="#11100e">
+  <link rel="canonical" href="https://saragarciastudio.com/">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Sara García Studio — Imágenes con intención">
+  <meta property="og:description" content="Fotografía, maquillaje y producción visual para marcas, talento y momentos que merecen permanecer.">
+  <meta property="og:url" content="https://saragarciastudio.com/">
+  <meta property="og:image" content="https://saragarciastudio.com/img/editorial-1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sara García Studio — Imágenes con intención">
+  <meta name="twitter:description" content="Fotografía, maquillaje y producción visual con dirección creativa y precisión.">
+  <meta name="twitter:image" content="https://saragarciastudio.com/img/editorial-1.jpg">
+  <link rel="preload" as="image" href="img/editorial-1.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Menú de Navegación principal -->
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Sara García Studio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre-mi.html">Sobre Mí</a></li>
-                <li class="dropdown">
-                    <a href="#">Fotografía</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="fotografia-moda.html">Fotografía de Moda</a></li>
-                        <li><a href="fotografia-eventos.html">Fotografía de Eventos</a></li>
-                        <li><a href="fotografia-producto.html">Fotografía de Producto</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Sara García Studio, inicio">
+      <span>Sara García</span><span>Studio</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="sr-only">Abrir menú</span><span aria-hidden="true">Menú</span>
+    </button>
+    <nav id="menu-principal" class="site-nav" aria-label="Navegación principal">
+      <a href="#trabajo">Trabajo</a>
+      <a href="#estudio">Estudio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#conversemos">Proyecto</a>
+    </nav>
+  </header>
 
-    <main>
-        <!-- Sección Banner / Bienvenida -->
-        <section class="hero">
-            <div class="container">
-                <h1>Hola, soy Sara García y te doy la bienvenida.</h1>
-                <p>Sara García Studio es un espacio multidisciplinar donde podrás disfrutar tanto de la fotografía como del maquillaje. Nos apasiona acompañar a las personas en momentos de crecimiento personal y profesional; es por eso que hemos ideado un lugar para hacer de esos instantes un recuerdo inolvidable.</p>
-                <p>Somos especialistas en fotografía de moda, producto y maquillaje en todas sus vertientes. Pero sea cual sea tu inquietud, te podemos ayudar a inmortalizar los buenos momentos en familia, tus eventos y proyectos.</p>
-                <p>Si quieres conocer más de nuestros servicios, esperamos poder hablar contigo muy pronto; clica en el botón de contacto y cuéntanos qué te traes entre manos.</p>
-                
-                <a href="contacto.html" class="btn">Contacto</a>
+  <main id="contenido">
+    <section id="inicio" class="opening" aria-labelledby="opening-title">
+      <div class="opening__index" aria-hidden="true">01 — 06</div>
+      <p class="opening__eyebrow">Fotografía · Dirección visual · Tenerife</p>
+      <h1 id="opening-title">La imagen empieza<br>antes del disparo.</h1>
+      <figure class="opening__image image-reveal">
+        <img src="img/editorial-1.jpg" alt="Modelo sobre una silla frente al mar, fotografiada en una editorial de moda" width="680" height="1019" fetchpriority="high">
+      </figure>
+      <p class="opening__note">Pensamos el concepto, cuidamos la producción y construimos una imagen que no necesita explicarse dos veces.</p>
+      <a class="scroll-cue" href="#manifiesto">Ver el enfoque <span aria-hidden="true">↓</span></a>
+    </section>
 
-                <!-- Marcador [foto] -->
-                <div class="hero-image">
-                    <img src="img/sara-garcia-retrato.jpg" alt="Sara García, CEO y Fotógrafa de Sara García Studio">
-                </div>
-            </div>
-        </section>
+    <section id="manifiesto" class="manifesto" aria-labelledby="manifesto-title">
+      <div class="section-number">02</div>
+      <h2 id="manifesto-title">No hacemos fotos para rellenar espacios.</h2>
+      <p>Trabajamos para que una colección tenga lenguaje, un producto despierte deseo y un evento conserve algo más que un registro. Cada encargo parte de una pregunta sencilla: <em>¿qué tiene que sentir quien mire?</em></p>
+    </section>
 
-        <!-- Sección Nuestros Servicios -->
-        <section class="servicios">
-            <div class="container">
-                <h2>Nuestros Servicios</h2>
-                <p class="intro-servicios">En Sara García Studio ofrecemos servicios de fotografía de moda, producto, eventos y social, capturando cada momento con profesionalismo y estilo. También brindamos maquillaje social y cinematográfico para realzar tu belleza en cualquier ocasión. Además, impartimos formación en fotografía y maquillaje para que desarrolles tus habilidades y talento. ¡Transformamos ideas en imágenes memorables!</p>
-
-                <div class="servicios-grid">
-                    <article class="servicio-card">
-                        <h3>Fotografía de moda</h3>
-                        <p>Ideal para destacar y potenciar tu presencia en el mundo de la moda.</p>
-                        <a href="fotografia-moda.html" class="btn-link">Saber más</a>
-                    </article>
-
-                    <article class="servicio-card">
-                        <h3>Fotografía de producto</h3>
-                        <p>La mejor arma para destacar tu producto.</p>
-                        <a href="fotografia-producto.html" class="btn-link">Saber más</a>
-                    </article>
-
-                    <article class="servicio-card">
-                        <h3>Fotografía de eventos</h3>
-                        <p>Fotografías y vídeo para inmortalizar tu evento con todo lujo de detalles.</p>
-                        <a href="fotografia-eventos.html" class="btn-link">Saber más</a>
-                    </article>
-
-                    <article class="servicio-card">
-                        <h3>Fotografía Social</h3>
-                        <p>Captura los momentos más especiales e inolvidables de tu vida.</p>
-                    </article>
-
-                    <article class="servicio-card">
-                        <h3>Maquillaje</h3>
-                        <p>Maquillaje para una ocasión especial o para tus trabajos cinematográficos.</p>
-                    </article>
-
-                    <article class="servicio-card">
-                        <h3>Formación</h3>
-                        <p>Aprende todo lo necesario sobre la fotografía y el maquillaje.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Call To Action (CTA) -->
-        <section class="cta">
-            <div class="container">
-                <h2>Si tienes alguna duda o necesitas un presupuesto, escríbenos sin problema</h2>
-                <a href="contacto.html" class="btn btn-primary">Contacto</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Sara García Studio. Todos los derechos reservados.</p>
+    <section id="trabajo" class="work" aria-labelledby="work-title">
+      <header class="work__header">
+        <div>
+          <p class="kicker">Selección de trabajo</p>
+          <h2 id="work-title">Tres formas de<br>hacer visible una idea.</h2>
         </div>
-    </footer>
+        <p>Moda, producto y eventos no comparten la misma lógica. Por eso tampoco deberían verse igual.</p>
+      </header>
 
-    <script src="js/script.js"></script>
-    
+      <article class="project project--editorial">
+        <div class="project__meta"><span>01</span><span>Moda</span><span>Concepto + producción</span></div>
+        <div class="project__visual project__visual--split">
+          <figure class="image-reveal"><img src="img/editorial-2.jpg" alt="Fotografía editorial de moda" width="900" height="1200" loading="lazy"></figure>
+          <figure class="image-reveal"><img src="img/lookbook-1.jpg" alt="Imagen de lookbook de moda" width="900" height="1200" loading="lazy"></figure>
+        </div>
+        <div class="project__copy">
+          <h3>Editoriales que cuentan por qué existe una colección.</h3>
+          <p>Construimos la narrativa visual completa: concepto, localización, estilismo, maquillaje, peluquería, atrezzo y selección de imágenes. El resultado no es solo una serie atractiva, sino una historia coherente alrededor de la firma.</p>
+          <a class="text-link" href="#moda">Explorar producción de moda <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project project--product">
+        <div class="project__meta"><span>02</span><span>Producto</span><span>Detalle + deseo</span></div>
+        <figure class="project__visual project__visual--wide image-reveal"><img src="img/producto-2.jpg" alt="Fotografía de producto con puesta en escena" width="1400" height="900" loading="lazy"></figure>
+        <div class="project__copy project__copy--offset">
+          <h3>Una buena imagen no describe el producto. Lo vuelve inevitable.</h3>
+          <p>Fotografiamos piezas en fondo limpio, escenografía o sobre modelo. Cuando la propuesta lo requiere, integramos estilismo, maquillaje y peluquería para que cada elemento trabaje a favor del producto.</p>
+          <a class="text-link" href="#producto">Ver fotografía de producto <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="project project--events">
+        <div class="project__meta"><span>03</span><span>Eventos</span><span>Ritmo + memoria</span></div>
+        <div class="project__visual project__visual--triptych">
+          <figure class="image-reveal"><img src="img/evento-1.jpg" alt="Cobertura fotográfica de un evento de moda" width="900" height="1200" loading="lazy"></figure>
+          <figure class="image-reveal"><img src="img/evento-2.jpg" alt="Detalle de un evento fotografiado por Sara García Studio" width="900" height="1200" loading="lazy"></figure>
+          <figure class="image-reveal"><img src="img/evento-3.jpg" alt="Ambiente de un evento de moda" width="900" height="1200" loading="lazy"></figure>
+        </div>
+        <div class="project__copy">
+          <h3>Lo importante ocurre rápido. La mirada tiene que llegar antes.</h3>
+          <p>Cubrimos presentaciones, showrooms, desfiles, backstage, pasarela, photocall y mercados. Fotografía y vídeo con atención al gesto, la atmósfera y los detalles que definen el evento.</p>
+          <a class="text-link" href="#eventos">Planificar una cobertura <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="pause" aria-label="Pausa visual">
+      <figure class="pause__image"><img src="img/making-of-3.jpg" alt="Momento de preparación durante una producción fotográfica" width="1400" height="900" loading="lazy"></figure>
+      <blockquote>
+        <p>“La fotografía final importa. Todo lo que ocurre para llegar hasta ella, también.”</p>
+      </blockquote>
+    </section>
+
+    <section id="estudio" class="studio" aria-labelledby="studio-title">
+      <div class="section-number">04</div>
+      <div class="studio__intro">
+        <p class="kicker">El estudio</p>
+        <h2 id="studio-title">Hola, soy Sara.<br>Trabajo entre la precisión y la intuición.</h2>
+      </div>
+      <div class="studio__body">
+        <p>Sara García Studio es un espacio multidisciplinar de fotografía, maquillaje y producción visual. Acompañamos a marcas, profesionales y personas en momentos de crecimiento, lanzamiento o transformación.</p>
+        <p>La especialidad está en moda y producto, pero la forma de trabajar es la misma en cada proyecto: escuchar, ordenar la idea y convertirla en imágenes con intención. Sin fórmulas prefabricadas. Sin hacer ruido porque sí.</p>
+      </div>
+      <figure class="studio__portrait image-reveal"><img src="img/making-of-1.jpg" alt="Sara García trabajando durante una producción" width="900" height="1200" loading="lazy"></figure>
+      <p class="studio__signature">Sara García<br><span>Fotógrafa y directora del estudio</span></p>
+    </section>
+
+    <section id="servicios" class="services" aria-labelledby="services-title">
+      <header class="services__header">
+        <div class="section-number">05</div>
+        <h2 id="services-title">Una producción puede necesitar una cámara.<br>O todo lo que ocurre alrededor.</h2>
+      </header>
+      <div class="services__list">
+        <details id="moda" open>
+          <summary><span>01</span><strong>Producción de moda</strong><small>Editorial · Lookbook · Test modelo</small></summary>
+          <div class="service-detail">
+            <p><strong>Editorial:</strong> una historia visual para presentar el concepto y carácter de una colección. Incluye dirección del enfoque, localizaciones, atrezzo y coordinación de estilismo, maquillaje y peluquería.</p>
+            <p><strong>Lookbook:</strong> una colección de imágenes clara y consistente para mostrar prendas, referencias y variantes, preparada para uso comercial, catálogo o comunicación de marca.</p>
+            <p><strong>Test de modelo:</strong> imágenes actuales, naturales y profesionales para casting. Estilismo neutro, cabello natural y una representación fiel de la persona.</p>
+          </div>
+        </details>
+        <details id="producto">
+          <summary><span>02</span><strong>Fotografía de producto</strong><small>Fondo limpio · Escenografía · Modelo</small></summary>
+          <div class="service-detail"><p>Fotografía de colección completa o piezas seleccionadas, en plano o sobre modelo. Definimos el tratamiento visual según el canal: e-commerce, campaña, catálogo, redes o prensa.</p></div>
+        </details>
+        <details id="eventos">
+          <summary><span>03</span><strong>Eventos</strong><small>Fotografía · Vídeo · Cobertura desde 2 h</small></summary>
+          <div class="service-detail"><p>Presentaciones, showrooms, pasarelas, backstage, photocall, cócteles y mercados. Una cobertura ágil para documentar tanto el programa como la atmósfera.</p></div>
+        </details>
+        <details>
+          <summary><span>04</span><strong>Piezas audiovisuales</strong><small>Making of · Fashion film · Spot</small></summary>
+          <div class="service-detail"><p>El making of muestra el proceso y humaniza la marca. El fashion film construye una pieza breve y sensorial alrededor de una colección. El spot concentra un mensaje comercial claro en un formato audiovisual preciso.</p></div>
+        </details>
+        <details>
+          <summary><span>05</span><strong>Maquillaje y formación</strong><small>Social · Cinematográfico · Talleres</small></summary>
+          <div class="service-detail"><p>Maquillaje para ocasiones especiales y producciones audiovisuales, además de formación práctica en fotografía y maquillaje para quienes quieren desarrollar criterio y técnica.</p></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="conversemos" class="contact" aria-labelledby="contact-title">
+      <p class="contact__pre">¿Tienes una colección, un lanzamiento o algo que todavía solo existe en tu cabeza?</p>
+      <h2 id="contact-title">Cuéntame qué<br>quieres hacer visible.</h2>
+      <div class="contact__actions">
+        <a class="contact__primary" href="mailto:info@saragarciastudio.com?subject=Nuevo%20proyecto%20para%20Sara%20Garc%C3%ADa%20Studio">Escribir sobre un proyecto <span aria-hidden="true">↗</span></a>
+        <a href="tel:+34604859893">+34 604 859 893</a>
+      </div>
+      <div class="contact__closing">
+        <p>Sara García Studio<br>Fotografía y producción visual</p>
+        <p>Tenerife · Disponible para proyectos</p>
+        <p>© <span data-year></span> Sara García</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

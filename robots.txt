@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saragarciastudio.com/sitemap.xml
